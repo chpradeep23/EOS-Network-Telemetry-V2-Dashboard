@@ -1,0 +1,65 @@
+---
+anchors:
+  thresholds-operstate: &thresholds-operstate
+    - color: "#FF3154" # red
+      level: 0
+    - color: "#4BDD33" # green
+      level: 1
+cellIdPreamble: cell-
+cells:
+  dc4-m1:Ethernet50/1:
+    dataRef: oper-state:dc4-m1:Ethernet50/1
+    fillColor:
+      thresholds: *thresholds-operstate
+  dc4-m1:Ethernet53/1:
+    dataRef: oper-state:dc4-m1:Ethernet53/1
+    fillColor:
+      thresholds: *thresholds-operstate
+  dc4-m1:Ethernet54/1:
+    dataRef: oper-state:dc4-m1:Ethernet54/1
+    fillColor:
+      thresholds: *thresholds-operstate
+  dc4-m1:Ethernet56/1:
+    dataRef: oper-state:dc4-m1:Ethernet56/1
+    fillColor:
+      thresholds: *thresholds-operstate
+  dc4-m2:Ethernet53/1:
+    dataRef: oper-state:dc4-m2:Ethernet53/1
+    fillColor:
+      thresholds: *thresholds-operstate
+  dc4-m2:Ethernet54/1:
+    dataRef: oper-state:dc4-m2:Ethernet54/1
+    fillColor:
+      thresholds: *thresholds-operstate
+  dc4-m2:Ethernet56/1:
+    dataRef: oper-state:dc4-m2:Ethernet56/1
+    fillColor:
+      thresholds: *thresholds-operstate
+  dc6-m1:Ethernet23:
+    dataRef: oper-state:dc6-m1:Ethernet23
+    fillColor:
+      thresholds: *thresholds-operstate
+  dc6-m1:Ethernet24:
+    dataRef: oper-state:dc6-m1:Ethernet24
+    fillColor:
+      thresholds: *thresholds-operstate
+  dc6-m1:Ethernet25:
+    dataRef: oper-state:dc6-m1:Ethernet25
+    fillColor:
+      thresholds: *thresholds-operstate
+  dc6-m2:Ethernet23:
+    dataRef: oper-state:dc6-m2:Ethernet23
+    fillColor:
+      thresholds: *thresholds-operstate
+  dc6-m2:Ethernet24:
+    dataRef: oper-state:dc6-m2:Ethernet24
+    fillColor:
+      thresholds: *thresholds-operstate
+  dc6-m2:Ethernet25:
+    dataRef: oper-state:dc6-m2:Ethernet25
+    fillColor:
+      thresholds: *thresholds-operstate
+  dc6-m2:Ethernet49/1:
+    dataRef: oper-state:dc6-m2:Ethernet49/1
+    fillColor:
+      thresholds: *thresholds-operstate

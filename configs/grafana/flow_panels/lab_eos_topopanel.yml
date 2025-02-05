@@ -1,0 +1,160 @@
+---
+anchors:
+  thresholds-operstate: &thresholds-operstate
+    - color: "#FF3154" # red
+      level: 0
+    - color: "#4BDD33" # green
+      level: 1
+  thresholds-traffic: &thresholds-traffic
+    - color: "#bec8d2" # grey
+      level: 0
+    - color: "#E5383B" # green
+      level: 1000000
+    - color: "#CCFF33" # Green
+      level: 100000
+    - color: "#FF8000" # orange
+      level: 5000000
+    - color: "#FF3154" # red
+      level: 10000000
+  label-config: &label-config
+    separator: replace
+    units: bps
+    decimalPoints: 1
+    valueMappings:
+      - valueMax: 19999
+        text: ​
+      - valueMin: 20000
+cellIdPreamble: cell-
+cells:
+  dc4-m1:Ethernet50/1:
+    dataRef: oper-state:dc4-m1:Ethernet50/1
+    fillColor:
+      thresholds: *thresholds-operstate
+  link_id:dc4-m1:Ethernet50/1:
+    dataRef: dc4-m1:Ethernet50/1:out
+    label: *label-config
+    strokeColor:
+      thresholds: *thresholds-traffic
+  dc4-m1:Ethernet53/1:
+    dataRef: oper-state:dc4-m1:Ethernet53/1
+    fillColor:
+      thresholds: *thresholds-operstate
+  link_id:dc4-m1:Ethernet53/1:
+    dataRef: dc4-m1:Ethernet53/1:out
+    label: *label-config
+    strokeColor:
+      thresholds: *thresholds-traffic
+  dc4-m1:Ethernet54/1:
+    dataRef: oper-state:dc4-m1:Ethernet54/1
+    fillColor:
+      thresholds: *thresholds-operstate
+  link_id:dc4-m1:Ethernet54/1:
+    dataRef: dc4-m1:Ethernet54/1:out
+    label: *label-config
+    strokeColor:
+      thresholds: *thresholds-traffic
+  dc4-m1:Ethernet56/1:
+    dataRef: oper-state:dc4-m1:Ethernet56/1
+    fillColor:
+      thresholds: *thresholds-operstate
+  link_id:dc4-m1:Ethernet56/1:
+    dataRef: dc4-m1:Ethernet56/1:out
+    label: *label-config
+    strokeColor:
+      thresholds: *thresholds-traffic
+
+
+  dc4-m2:Ethernet53/1:
+    dataRef: oper-state:dc4-m2:Ethernet53/1
+    fillColor:
+      thresholds: *thresholds-operstate
+  link_id:dc4-m2:Ethernet53/1:
+    dataRef: dc4-m2:Ethernet53/1:out
+    label: *label-config
+    strokeColor:
+      thresholds: *thresholds-traffic
+  dc4-m2:Ethernet54/1:
+    dataRef: oper-state:dc4-m2:Ethernet54/1
+    fillColor:
+      thresholds: *thresholds-operstate
+  link_id:dc4-m2:Ethernet54/1:
+    dataRef: dc4-m2:Ethernet54/1:out
+    label: *label-config
+    strokeColor:
+      thresholds: *thresholds-traffic
+  dc4-m2:Ethernet56/1:
+    dataRef: oper-state:dc4-m2:Ethernet56/1
+    fillColor:
+      thresholds: *thresholds-operstate
+  link_id:dc4-m2:Ethernet56/1:
+    dataRef: dc4-m2:Ethernet56/1:out
+    label: *label-config
+    strokeColor:
+      thresholds: *thresholds-traffic
+
+  dc6-m1:Ethernet23:
+    dataRef: oper-state:dc6-m1:Ethernet23
+    fillColor:
+      thresholds: *thresholds-operstate
+  link_id:dc6-m1:Ethernet23:
+    dataRef: dc6-m1:Ethernet23:out
+    label: *label-config
+    strokeColor:
+      thresholds: *thresholds-traffic
+  dc6-m1:Ethernet24:
+    dataRef: oper-state:dc6-m1:Ethernet24
+    fillColor:
+      thresholds: *thresholds-operstate
+  link_id:dc6-m1:Ethernet24:
+    dataRef: dc6-m1:Ethernet24:out
+    label: *label-config
+    strokeColor:
+      thresholds: *thresholds-traffic
+  dc6-m1:Ethernet25:
+    dataRef: oper-state:dc6-m1:Ethernet25
+    fillColor:
+      thresholds: *thresholds-operstate
+  link_id:dc6-m1:Ethernet25:
+    dataRef: dc6-m1:Ethernet25:out
+    label: *label-config
+    strokeColor:
+      thresholds: *thresholds-traffic
+
+  dc6-m2:Ethernet23:
+    dataRef: oper-state:dc6-m2:Ethernet23
+    fillColor:
+      thresholds: *thresholds-operstate
+  link_id:dc6-m2:Ethernet23:
+    dataRef: dc6-m2:Ethernet23:out
+    label: *label-config
+    strokeColor:
+      thresholds: *thresholds-traffic
+  dc6-m2:Ethernet24:
+    dataRef: oper-state:dc6-m2:Ethernet24
+    fillColor:
+      thresholds: *thresholds-operstate
+  link_id:dc6-m2:Ethernet24:
+    dataRef: dc6-m2:Ethernet24:out
+    label: *label-config
+    strokeColor:
+      thresholds: *thresholds-traffic
+  dc6-m2:Ethernet25:
+    dataRef: oper-state:dc6-m2:Ethernet25
+    fillColor:
+      thresholds: *thresholds-operstate
+  link_id:dc6-m2:Ethernet25:
+    dataRef: dc6-m2:Ethernet25:out
+    label: *label-config
+    strokeColor:
+      thresholds: *thresholds-traffic
+  dc6-m2:Ethernet49/1:
+    dataRef: oper-state:dc6-m2:Ethernet49/1
+    fillColor:
+      thresholds: *thresholds-operstate
+  link_id:dc6-m2:Ethernet49/1:
+    dataRef: dc6-m2:Ethernet49/1:out
+    label: *label-config
+    strokeColor:
+      thresholds: *thresholds-traffic
+
+
